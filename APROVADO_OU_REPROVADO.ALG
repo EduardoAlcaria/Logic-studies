@@ -12,13 +12,21 @@ inicio
       M <- (N1 + N2)/2
       Se (M >= 7) entao
          Escreval("--------------------------------------")
-         Escreval("MEDIA: ",M)
+         Escreval("MEDIA: ",M:4:2)
          Escreval("ALUNO APROVADO")
          Escreval("--------------------------------------")
       Senao
-           Escreval("--------------------------------------")
-           Escreval("MEDIA: ",M)
-           Escreval("ALUNO REPROVADO")
-           Escreval("--------------------------------------")
+           Se (M >= 5) e (M < 7) entao
+              Escreval("--------------------------------------")
+              Escreval("MEDIA: ",M:4:2)
+               Escreval("ALUNO EM RECUPERAÇÃO")
+               Escreval("--------------------------------------")
+           Senao
+                Escreval("--------------------------------------")
+                Escreval("MEDIA: ",M:4:2)
+                Escreval("ALUNO REPROVADO")
+                Escreval("--------------------------------------")
+           Fimse
+
       Fimse
 fimalgoritmo
