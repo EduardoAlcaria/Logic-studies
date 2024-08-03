@@ -1,9 +1,16 @@
-algoritmo "exchange"
+algoritmo "Exchenger"
 var
-   r, d: Real
+   D, R: Real
+   C, Q: Inteiro
 inicio
-      Escreva("how much reais do you have? ")
-      Leia(r)
-      d <- r / 3.45
-      Escreva("You can buy", d:5:2," dollars with", r," reais")
+      C <- Q
+      Escreva("How many exchenges do you want do? ")
+      Leia(Q)
+      Enquanto (C < Q) faca
+               Escreva("How much Reais do you have? R$")
+               Leia(R)
+               D <- R/2.20
+               Escreval("You can buy US$",D:5:2)
+               C <- C + 1
+      FimEnquanto
 fimalgoritmo
