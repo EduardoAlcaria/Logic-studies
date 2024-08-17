@@ -1,11 +1,10 @@
 algoritmo "SuperContador"
 var
-   Select, Cont, n1, n2: Inteiro
+   Select, Cont, Cont2: Inteiro
 inicio
-   Select <- 0
-   n1 <- 1
-   n2 <- 10
 Repita
+   Cont <- 1
+   Cont2 <- 10
    Escreval("                 ")
    Escreval("=================")
    Escreval("|    M E N U    |")
@@ -16,18 +15,16 @@ Repita
    Escreval("=================")
    Leia(Select)
    Escolha(Select)
-     Caso 1
-      Repita
-        Escreva(n1,"..")
-        n1 <- n1 + 1
-      Ate(n1 = 11)
-     Caso 2
-      Repita
-        Escreva(n2,"..")
-        n2 <- n2 - 1
-      Ate(n2 = 0)
-     Caso 3
-      Escreva("Saindo")
+     caso 1
+       Enquanto (Cont < 11) faca
+         Escreva(Cont,"..")
+         Cont <- Cont + 1
+       FimEnquanto
+     caso 2
+       Enquanto (Cont2 > 0) faca
+         Escreva(Cont2,"..")
+         Cont2 <- Cont2 - 1
+       FimEnquanto
    FimEscolha
 Ate(Select = 3)
 fimalgoritmo
